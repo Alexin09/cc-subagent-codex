@@ -16,15 +16,7 @@ Claude Code 用久了会碰到一个现实问题：**token 消耗快，Claude Op
 
 cc-subagent-codex 让你的 Claude Code / OpenCode 把这类任务**自动分配给 Codex**，并行跑在右侧分屏里，你在左边继续对话，右边能看到 Codex 在实际执行：
 
-```
-┌─────────────────────────┬──────────────────────┐
-│                         │  subagent-1 (Codex)  │
-│   Claude / OpenCode     ├──────────────────────┤
-│                         │  subagent-2 (Codex)  │
-│   主 AI: 规划 + 验证    ├──────────────────────┤
-│   你只需描述需求        │  ░░░▓▓███  progress  │
-└─────────────────────────┴──────────────────────┘
-```
+![Image](https://github.com/user-attachments/assets/906cc751-d430-4510-a723-568a432b8d6a)
 
 **核心优势：**
 
