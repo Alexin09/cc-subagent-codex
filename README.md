@@ -4,21 +4,7 @@
 
 [English](#english) | 中文
 
----
-
-## 让 AI 帮你安装（最省事）
-
-把下面这段复制，直接粘贴给你的 Claude Code 或 OpenCode 发送，它会自动完成所有安装步骤：
-
-```
-帮我安装 cc-subagent-codex：
-1. 确认 tmux 是否已安装，没有就用 brew install tmux 安装
-2. 确认 codex 是否已安装，没有就用 npm install -g @openai/codex 安装
-3. 在 ~/cc-subagent-codex 目录 clone 这个仓库：https://github.com/YOUR_USERNAME/cc-subagent-codex.git
-4. 运行 bash ~/cc-subagent-codex/install.sh
-5. 在 ~/.zshrc 中确认 cc-subcodex 命令已注册
-6. 告诉我安装是否成功，以及如何启动
-```
+https://github.com/user-attachments/assets/d6e1b78e-0e23-4284-a16b-94e94ce4c694
 
 ---
 
@@ -49,27 +35,27 @@ cc-subagent-codex 让你的 Claude Code / OpenCode 把这类任务**自动分配
 
 ---
 
-## 快速安装
+## 安装
 
-**第一步：安装依赖**
+```bash
+npx cc-subagent-codex
+```
+
+一条命令完成全部安装，包括依赖检查、Skill 注册、命令配置。
+
+> 前置依赖：[tmux](https://github.com/tmux/tmux)（`brew install tmux`）和 [Codex CLI](https://github.com/openai/codex)（`npm install -g @openai/codex`，需要 OpenAI 免费账号）
+
+---
+## 手动安装
+
+如果不想用 npx，也可以手动：
 
 ```bash
 brew install tmux
 npm install -g @openai/codex
+git clone https://github.com/Alexin09/cc-subagent-codex.git
+cd cc-subagent-codex && bash install.sh && source ~/.zshrc
 ```
-
-> Codex 需要 OpenAI 账号，免费账号即可使用 GPT-4o 额度。
-
-**第二步：安装本项目**
-
-```bash
-git clone https://github.com/YOUR_USERNAME/cc-subagent-codex.git
-cd cc-subagent-codex
-bash install.sh
-source ~/.zshrc   # 或重开终端
-```
-
-完成。`install.sh` 自动注册 `cc-subcodex` 命令，并将 Skill 安装到 Claude Code 和 OpenCode 的识别路径下。
 
 ---
 
@@ -166,19 +152,19 @@ npm install -g @openai/codex
 
 > Use free Codex as a coding subagent for Claude Code / OpenCode — run parallel tasks while keeping your main conversation uninterrupted.
 
-## Let AI install it for you (easiest)
+https://github.com/user-attachments/assets/d6e1b78e-0e23-4284-a16b-94e94ce4c694
 
-Copy the prompt below and paste it into Claude Code or OpenCode — it will handle everything automatically:
+---
 
+## Install
+
+```bash
+npx cc-subagent-codex
 ```
-Help me install cc-subagent-codex:
-1. Check if tmux is installed, install with brew install tmux if not
-2. Check if codex is installed, install with npm install -g @openai/codex if not
-3. Clone this repo to ~/cc-subagent-codex: https://github.com/YOUR_USERNAME/cc-subagent-codex.git
-4. Run bash ~/cc-subagent-codex/install.sh
-5. Confirm the cc-subcodex command is registered in ~/.zshrc
-6. Tell me if installation succeeded and how to get started
-```
+
+One command. Handles everything — dependency checks, Skill registration, command setup.
+
+> Prerequisites: [tmux](https://github.com/tmux/tmux) (`brew install tmux`) and [Codex CLI](https://github.com/openai/codex) (`npm install -g @openai/codex`, free OpenAI account required)
 
 ---
 
@@ -207,27 +193,16 @@ Codex handles boilerplate scripts, standalone tools, and file generation just fi
 
 ---
 
-## Quick Install
+## Manual install
 
-**Step 1: Install dependencies**
+If you prefer not to use npx:
 
 ```bash
 brew install tmux
 npm install -g @openai/codex
+git clone https://github.com/Alexin09/cc-subagent-codex.git
+cd cc-subagent-codex && bash install.sh && source ~/.zshrc
 ```
-
-> Codex requires an OpenAI account. The free tier includes GPT-4o usage.
-
-**Step 2: Install this project**
-
-```bash
-git clone https://github.com/YOUR_USERNAME/cc-subagent-codex.git
-cd cc-subagent-codex
-bash install.sh
-source ~/.zshrc   # or open a new terminal
-```
-
-Done. `install.sh` registers the `cc-subcodex` command and installs the Skill into the paths recognized by both Claude Code and OpenCode.
 
 ---
 
