@@ -4,8 +4,6 @@
 
 [English](#english) | 中文
 
-![Image](https://github.com/user-attachments/assets/906cc751-d430-4510-a723-568a432b8d6a)
-
 ---
 
 ## 为什么需要这个
