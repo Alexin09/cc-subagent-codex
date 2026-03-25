@@ -4,7 +4,7 @@
 
 [English](#english) | 中文
 
-https://github.com/user-attachments/assets/d6e1b78e-0e23-4284-a16b-94e94ce4c694
+![Image](https://github.com/user-attachments/assets/906cc751-d430-4510-a723-568a432b8d6a)
 
 ---
 
@@ -152,7 +152,7 @@ npm install -g @openai/codex
 
 > Use free Codex as a coding subagent for Claude Code / OpenCode — run parallel tasks while keeping your main conversation uninterrupted.
 
-https://github.com/user-attachments/assets/d6e1b78e-0e23-4284-a16b-94e94ce4c694
+![Image](https://github.com/user-attachments/assets/906cc751-d430-4510-a723-568a432b8d6a)
 
 ---
 
