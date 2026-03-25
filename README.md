@@ -122,10 +122,6 @@ cc-subagent-codex/
 
 确认是在 `cc-subcodex` 启动的 tmux 界面里操作，且使用了 `/codex-subagent` 前缀或明确提到"让 Codex 帮我做"。
 
-**进度显示不准确**
-
-进度检测基于 Codex TUI 的输出特征，属于已知限制，见 [SUPERVISION.md](SUPERVISION.md)。
-
 **codex 命令未找到**
 
 ```bash
@@ -251,10 +247,6 @@ Claude verifies and reports back
 **Subagent mode not triggering**
 
 Make sure you're inside the tmux workspace launched by `cc-subcodex`, and use the `/codex-subagent` prefix or explicitly say "let Codex handle this".
-
-**Progress bar inaccurate**
-
-Progress detection is based on Codex TUI output patterns — a known limitation. See [SUPERVISION.md](SUPERVISION.md).
 
 **`codex` command not found**
 
